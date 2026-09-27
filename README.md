@@ -32,13 +32,15 @@ TOFU is a general-purpose lossless binary container, designed with music product
 ## Installation & PATH Setup
 
 ### Option 1: 1-Click Automated Setup (Windows)
-Double-click `setup.bat` or run from CMD/PowerShell:
+Double-click `setup.bat` or `setup.exe`, or run from CMD/PowerShell:
 ```cmd
 setup.bat
 ```
-This automated script:
+*(or run `setup.exe`)*
+
+This automated installer:
 1. Detects whether Rust is installed (and downloads/installs it via `rustup` if missing).
-2. Builds and installs `tofu` into `%USERPROFILE%\.cargo\bin\tofu.exe`.
+2. Builds and installs `tofu` globally into `%USERPROFILE%\.cargo\bin\tofu.exe`.
 3. Ensures Cargo's bin directory is permanently in your Windows User PATH.
 4. Generates an optimized standalone `target\release\tofu.exe`.
 
