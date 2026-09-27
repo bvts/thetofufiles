@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "crates/tofu-core",
+    "crates/tofu-cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+authors = ["TOFU Developers"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/tofu/tofu"

@@ -1,0 +1,26 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+
+
+# Operating System temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Logs and environment
+*.log
+.env
+.env.*
+
+# Generated test archives and local folders
+123/
+test_data/
+extracted*/
+*.tofu
+scratch/

@@ -1,0 +1,21 @@
+[package]
+name = "tofu-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Core library for TOFU lossless audio preset and sample container format"
+
+[dependencies]
+zstd = "0.13"
+sha2 = "0.10"
+crc32fast = "1.4"
+byteorder = "1.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+walkdir = "2.5"
+hex = "0.4"
+
+[dev-dependencies]
+tempfile = "3.17"
