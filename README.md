@@ -31,14 +31,24 @@ TOFU is a general-purpose lossless binary container, designed with music product
 
 ## Installation & PATH Setup
 
-### Option 1: Install Globally with Cargo (Recommended)
-If you have Rust installed, install `tofu` directly to your global Cargo bin directory:
+### Option 1: 1-Click Automated Setup (Windows)
+Double-click `setup.bat` or run from CMD/PowerShell:
+```cmd
+setup.bat
+```
+This automated script:
+1. Detects whether Rust is installed (and downloads/installs it via `rustup` if missing).
+2. Builds and installs `tofu` into `%USERPROFILE%\.cargo\bin\tofu.exe`.
+3. Ensures Cargo's bin directory is permanently in your Windows User PATH.
+4. Generates an optimized standalone `target\release\tofu.exe`.
+
+### Option 2: Install Globally with Cargo
+If you already have Rust installed:
 ```powershell
 cargo install --path crates/tofu-cli
 ```
-`tofu` will be immediately available from any CMD or PowerShell terminal.
 
-### Option 2: Build the Windows Native Executable
+### Option 3: Manual Build of the Windows Native Executable
 ```powershell
 cargo build --release
 ```
